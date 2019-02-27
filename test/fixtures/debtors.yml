@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  email: MyString
-  phone_num: MyString
+Jessica_Ramirez:
+  name: Jessica Ramirez
+  email: jessica@gmail.com
+  phone_num: 312-283-2846
 
-two:
-  name: MyString
-  email: MyString
-  phone_num: MyString
+James_Smith:
+  name: James Smith
+  email: Jamess@gmail.com
+  phone_num: 312-324-2344
