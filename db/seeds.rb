@@ -23,7 +23,7 @@ debtor.destroy_all
 
 debt.create(
   [
-    {amount: '5.00', dete_borrowed:'12-29-2018', date_due:'01-20-2019', description:'restaurant bill money', debtor: @Jessica}
-    {amount: '50.00', dete_borrowed:'01-01-2019', date_due:'01-30-2019', description:'electric bill money', debtor: @James}
+    {amount: '5.00', dete_borrowed: '12-29-2018', date_due: '01-20-2019', description: 'restaurant bill money', debtor: @Jessica}
+    {amount: '50.00', dete_borrowed: '01-01-2019', date_due: '01-30-2019', description: 'electric bill money', debtor: @James}
   ]
 )
