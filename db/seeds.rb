@@ -21,6 +21,7 @@ debtor.destroy_all
   phone_num: '312-324-2344'
 )
 
+
 debt.create(
   [
     {amount: '5.00', dete_borrowed: '12-29-2018', date_due: '01-20-2019', description: 'restaurant bill money', debtor: @Jessica}

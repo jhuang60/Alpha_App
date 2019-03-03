@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 Jessica_Ramirez:
+
   name: Jessica Ramirez
   email: jessica@gmail.com
   phone_num: 312-283-2846
 
 James_Smith:
+
   name: James Smith
   email: Jamess@gmail.com
   phone_num: 312-324-2344
