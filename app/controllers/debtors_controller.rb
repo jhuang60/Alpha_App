@@ -69,6 +69,6 @@ class DebtorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def debtor_params
-      params.fetch(:debtor, {})
+      params.fetch(:debtor, {name: @debtor.name, email: @debtor.email, phone_num: @debtor.phone_num, debtor_id: @debtor.debtor_id} )
     end
 end

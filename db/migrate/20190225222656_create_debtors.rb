@@ -4,6 +4,7 @@ class CreateDebtors < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :email
       t.string :phone_num
+      t.string :debtor_id
 
       t.timestamps
     end
