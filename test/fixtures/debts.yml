@@ -2,12 +2,13 @@
 
 Jessica:
   amount: 5.00
-  date_borrowed: 12-29-2018
-  date_due: 01-20-2019
+  date_borrowed: 2018-12-29
+  date_due: 2019-01-20
   description: restaurant bill money
+
 
 James:
   amount: 50.00
-  date_borrowed: 01-01-2019
-  date_due: 01-30-2019
+  date_borrowed: 2019-01-01
+  date_due: 2019-01-30
   description: electric bill money

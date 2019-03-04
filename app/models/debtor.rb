@@ -11,5 +11,5 @@ class Debtor < ApplicationRecord
     with: /\d{3}-\d{3}-\d{4}/,
     message: "Invalid. Please double check the number entered."
   }
-  
+
 end
