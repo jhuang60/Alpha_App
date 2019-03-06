@@ -5,6 +5,7 @@ Jessica:
   date_borrowed: 2018-12-29
   date_due: 2019-01-20
   description: restaurant bill money
+  debtor: Jessica_Ramirez
 
 
 James:
@@ -12,3 +13,4 @@ James:
   date_borrowed: 2019-01-01
   date_due: 2019-01-30
   description: electric bill money
+  debtor: James_Smith

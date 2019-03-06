@@ -12,13 +12,15 @@ Debt.destroy_all
 @Jessica_Ramirez = Debtor.create (
   name: 'Jessica Ramirez',
   email: 'jessica@gmail.com',
-  phone_num: '312-283-2846'
+  phone_num: '312-283-2846',
+  debtor_id: 1
 )
 
 @James_Smith = Debtor.create (
   name: 'James Smith',
   email: 'Jamess@gmail.com',
-  phone_num: '312-324-2344'
+  phone_num: '312-324-2344',
+  debtor_id: 2
 )
 
 Debt.create(
