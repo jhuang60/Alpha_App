@@ -10,22 +10,24 @@ Debtor.destroy_all
 Debt.destroy_all
 
 @Jessica_Ramirez = Debtor.create (
-  name: 'Jessica Ramirez',
-  email: 'jessica@gmail.com',
-  phone_num: '312-283-2846',
-  debtor_id: 1
+  {
+    name: 'Jessica Ramirez' ,
+    email: 'jessica@gmail.com' ,
+    phone_num: '312-283-2846'
+  }
 )
 
 @James_Smith = Debtor.create (
-  name: 'James Smith',
-  email: 'Jamess@gmail.com',
-  phone_num: '312-324-2344',
-  debtor_id: 2
+  {
+    name: 'James Smith' ,
+    email: 'Jamess@gmail.com' ,
+    phone_num: '312-324-2344'
+  }
 )
 
 Debt.create(
   [
-    {amount: '5.00', date_borrowed: '2018-12-29', date_due: '2019-01-20', description: 'restaurant bill money', debtor: @Jessica_Ramirez}
+    {amount: '5.00', date_borrowed: '2018-12-29', date_due: '2019-01-20', description: 'restaurant bill money', debtor: @Jessica_Ramirez},
     {amount: '50.00', date_borrowed: '2019-01-01', date_due: '2019-01-30', description: 'electric bill money', debtor: @James_Smith}
   ]
 )
