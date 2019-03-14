@@ -3,7 +3,7 @@
 %article
   %h3= @debt.debtor.name
   %p.byline= @debt.debtor.name
-  %p.byline= @debt.amount
+  %p.byline= number_to_currency(@debt.amount)
   %p.byline= @debt.date_borrowed
   %p.byline= @debt.date_due
   %p.byline= @debt.description

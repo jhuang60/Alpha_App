@@ -7,7 +7,7 @@
     %ol
       %article
         %h3= debt.debtor.name
-        %p.byline= debt.amount
+        %p.byline= number_to_currency(debt.amount)
         %p.byline= debt.description
         %p.byline= debt.date_due
 
