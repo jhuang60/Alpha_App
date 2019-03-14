@@ -6,5 +6,18 @@
         - @debt.errors.full_messages.each do |message|
           %li= message
 
-  .actions
-    = f.submit 'Save'
+  %ol.inputs
+    %ol
+      = f.label :amount
+      = f.text_field :amount
+    %ol
+      = f.label :date_borrowed
+      = f.text_field :date_borrowed
+    %ol
+      = f.label :date_due
+      = f.text_field :date_due
+    %ol
+      = f.label :description
+      = f.text_field :description
+    %ol.actions
+      = f.submit 'Create'
