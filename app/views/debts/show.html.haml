@@ -3,6 +3,13 @@
 %article
   %h3= @debt.debtor.name
   %p.byline= @debt.debtor.name
+  %p.byline= @debt.amount
+  %p.byline= @debt.date_borrowed
+  %p.byline= @debt.date_due
+  %p.byline= @debt.description
+  %p.byline= @debt.debtor.email
+  %p.byline= @debt.debtor.phone_num
+
   %ul.controls
     %li= link_to 'Edit', edit_debt_path(@debt)
     %li= link_to 'Destroy', @debt, method: :delete, data: { confirm: 'Are you sure?' }
