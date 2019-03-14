@@ -8,16 +8,26 @@
 
   %ol.inputs
     %ol
+      = f.label :debtor_name
+      = f.text_field :debtor_name
+    %ol
       = f.label :amount
-      = f.text_field :amount
+      = f.number_field :amount
     %ol
       = f.label :date_borrowed
-      = f.text_field :date_borrowed
+      = f.date_field :date_borrowed
     %ol
       = f.label :date_due
-      = f.text_field :date_due
+      = f.date_field :date_due
+    %ol
+      = f.label :debtor_email
+      = f.email_field :debtor_email
+    %ol
+      = f.label :debtor_phone_num
+      = f.telephone_field :debtor_phone_num
     %ol
       = f.label :description
-      = f.text_field :description
+      = f.text_area :description
+
     %ol.actions
       = f.submit 'Create'
