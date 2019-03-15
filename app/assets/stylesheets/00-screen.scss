@@ -26,12 +26,24 @@ html {
 h1 {
   font-size: px-to-em(40.5px);
   line-height: px-to-em(40px,40.5px);
-  padding-bottom: px-to-em(40px,40.5px);
 }
 
 h3 {
   font-size: px-to-em(30px);
   line-height: px-to-em(80.5px,30px);
+}
+
+label,
+input {
+  display: block;
+}
+
+input {
+  border: 0;
+  background: white;
+  box-sizing: border-box;
+  line-height: px-to-em(22px,18px); /*22/18=1.222*/
+  padding: px-to-em(13px,18px);; /* 13/18 = .72*/
 }
 
 footer {
