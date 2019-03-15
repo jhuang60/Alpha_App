@@ -1,6 +1,5 @@
 %header
-  %h2 Latest Debts
-  %p= link_to 'New Post', new_debt_path
+%p= link_to 'Create new debt', new_debt_path
 
 %ul.debts
   - @debts.each do |debt|
