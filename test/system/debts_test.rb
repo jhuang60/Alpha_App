@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class DebtsTest < ApplicationSystemTestCase
   setup do
-    @debt = debts(:one)
+    @debt = debts(:Jessica)
   end
 
   test "visiting the index" do
@@ -29,7 +29,7 @@ class DebtsTest < ApplicationSystemTestCase
     assert_text "Debt was successfully updated"
     click_on "Back"
   end
-
+ 
   test "destroying a Debt" do
     visit debts_url
     page.accept_confirm do
