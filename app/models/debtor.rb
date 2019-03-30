@@ -12,4 +12,5 @@ class Debtor < ApplicationRecord
     message: "Invalid. Please double check the number entered."
   }
 
+
 end

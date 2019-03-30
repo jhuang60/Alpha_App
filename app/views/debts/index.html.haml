@@ -4,6 +4,8 @@
 %ul.debts
   - @debts.each do |debt|
     %ol
+
+
       %article
         %h3= debt.debtor.name
         %p.byline= number_to_currency(debt.amount)
