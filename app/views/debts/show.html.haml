@@ -2,19 +2,21 @@
 
 %article
   %h3= @debt.debtor.name
-  %p.byline= @debt.debtor.name
-  %p.byline= number_to_currency(@debt.amount)
-  %p.byline= @debt.date_borrowed
-  %p.byline= @debt.date_due
-  %p.byline= @debt.description
-  %p.byline= @debt.debtor.email
-  %p.byline= @debt.debtor.phone_num
+  %p.byline= "Amount: " + number_to_currency(@debt.amount)
+  %ul
+    %li{ :class => "dateb"}= "Date Borrowed: "
+    %li{ :class => "dateb"}= @debt.date_borrowed
+  %ul
+    %li{ :class => "dated"}= "Date Due: "
+    %li{ :class => "dated"}= @debt.date_due
+
+  %p.byline= "Description: " + @debt.description
+  %p.byline= "Email: " +@debt.debtor.email
+  %p.byline= "Phone number: " +@debt.debtor.phone_num
 
   %ul.controls
-    %li= link_to 'Edit', edit_debt_path(@debt)
-    %li= link_to 'Destroy', @debt, method: :delete, data: { confirm: 'Are you sure?' }
+    %li{ :class => "select"}= link_to 'Edit', edit_debt_path(@debt)
+    %li{ :class => "select"}= link_to 'Destroy', @debt, method: :delete, data: { confirm: 'Are you sure?' }
+    %li{ :class => "select"}= link_to 'Back', debts_path
 
-  %ul
-    %li= link_to 'Back', debts_path
-    
 %footer

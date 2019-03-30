@@ -1,18 +1,17 @@
 %header
-%p= link_to 'Create new debt', new_debt_path
+%p{ :id => "createdebt"}= link_to 'Create new debt', new_debt_path
 
 %ul.debts
   - @debts.each do |debt|
     %ol
 
-
       %article
         %h3= debt.debtor.name
-        %p.byline= number_to_currency(debt.amount)
-        %p.byline= debt.description
-        %p.byline= debt.date_due
+        %p.byline= debt.date_borrowed
+        %p.byline= "Amount: " + number_to_currency(debt.amount)
+        %p.byline= "Description: " + debt.description
 
         %ul.controls
-          %td= link_to 'Show', debt
-          %td= link_to 'Edit', edit_debt_path(debt)
-          %td= link_to 'Destroy', debt, method: :delete, data: { confirm: 'Are you sure?' }
+          %ol{ :class => "select"}= link_to 'Show', debt
+          %ol{ :class => "select"}= link_to 'Edit', edit_debt_path(debt)
+          %ol{ :class => "select"}= link_to 'Destroy', debt, method: :delete, data: { confirm: 'Are you sure?' }
