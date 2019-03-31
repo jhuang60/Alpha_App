@@ -7,27 +7,27 @@
           %li= message
 
   %ol.inputs
-    %ol
+    %ol{ :class => "form"}
       = f.label :debtor_name
       = f.text_field :debtor_name
-    %ol
+    %ol{ :class => "form"}
       = f.label :amount
       = f.number_field :amount
-    %ol
+    %ol{ :class => "form"}
       = f.label :date_borrowed
       = f.date_field :date_borrowed
-    %ol
+    %ol{ :class => "form"}
       = f.label :date_due
       = f.date_field :date_due
-    %ol
+    %ol{ :class => "form"}
       = f.label :debtor_email
       = f.email_field :debtor_email
-    %ol
+    %ol{ :class => "form"}
       = f.label :debtor_phone_num
       = f.telephone_field :debtor_phone_num
-    %ol
+    %ol{ :class => "form"}
       = f.label :description
       = f.text_area :description
 
-    %ol.actions
-      = f.submit 'Create'
+  %ol.actions
+    = f.submit 'Create'
