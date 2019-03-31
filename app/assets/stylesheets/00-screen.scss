@@ -203,7 +203,8 @@ ol {
 }
 
 label,
-input {
+input,
+textarea {
   display: block;
 }
 
@@ -215,16 +216,22 @@ article {
 
 .inputs {
   background-color: rgba(255, 255, 255, 0.67);
-  padding-top: 5%;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+input, textarea {
+  width: 95%;
+  border: 0;
 }
 
 .form {
   border: 0;
+  padding-left: 5%;
   background: rgba(251, 221, 187, 0.78);
   box-sizing: border-box;
-  line-height: px-to-em(22px,18px); /*22/18=1.222*/
-  padding-bottom: 5%;
-  width: 60%;
+  line-height: px-to-em(35px,18px); /*22/18=1.222*/
+  width: 100%;
 }
 
 .controls {
@@ -243,6 +250,15 @@ article {
 
 .select:hover {
   background-color: rgba(237, 176, 22, 0.46);
+}
+
+.actions {
+  text-align: center;
+  padding-top: 5%;
+  padding-right: 10%;
+  padding-left: 15%;
+  background-color: rgba(251, 221, 187, 0.78);
+  padding-bottom: 3%;
 }
 
 a {
