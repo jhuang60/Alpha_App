@@ -12,9 +12,9 @@ class DebtsTest < ApplicationSystemTestCase
 
   test "creating a Debt" do
     visit debts_url
-    click_on "New Debt"
+    click_on "Create new debt"
 
-    click_on "Create Debt"
+    click_on "Create"
 
     assert_text "Debt was successfully created"
     click_on "Back"
@@ -24,12 +24,12 @@ class DebtsTest < ApplicationSystemTestCase
     visit debts_url
     click_on "Edit", match: :first
 
-    click_on "Update Debt"
+    click_on "Create"
 
     assert_text "Debt was successfully updated"
     click_on "Back"
   end
- 
+
   test "destroying a Debt" do
     visit debts_url
     page.accept_confirm do

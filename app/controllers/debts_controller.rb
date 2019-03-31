@@ -71,4 +71,5 @@ class DebtsController < ApplicationController
     def debt_params
       params.require(:debt).permit(:amount, :date_borrowed, :date_due, :description, :debtor_id)
     end
+
 end

@@ -12,6 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2019_02_27_215757) do
 
+  create_table "debtors", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "phone_num"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "debts", force: :cascade do |t|
     t.decimal "amount"
     t.date "date_borrowed"
@@ -21,14 +29,6 @@ ActiveRecord::Schema.define(version: 2019_02_27_215757) do
     t.datetime "updated_at", null: false
     t.integer "debtor_id"
     t.index ["debtor_id"], name: "index_debts_on_debtor_id"
-  end
-
-  create_table "debtors", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "phone_num"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

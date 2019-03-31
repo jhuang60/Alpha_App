@@ -1,5 +1,7 @@
 %header
 %p{ :id => "createdebt"}= link_to 'Create new debt', new_debt_path
+%h1{ :id => "current" } Debts
+%p#notice= notice
 
 %ul.debts
   - @debts.each do |debt|

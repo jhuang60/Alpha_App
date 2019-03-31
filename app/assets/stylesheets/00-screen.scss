@@ -284,6 +284,11 @@ a {
   background-color: rgba(251, 221, 187, 0.78);
 }
 
+#current {
+  font-size: px-to-em(20px);
+  line-height: px-to-em(25px,20.5px);
+}
+
 footer {
   margin-top: 5%;
   margin-bottom: 0;
