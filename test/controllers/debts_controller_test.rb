@@ -19,7 +19,7 @@ class DebtsControllerTest < ActionDispatch::IntegrationTest
     assert_difference('Debt.count') do
       post debts_url, params: { debt: { amount: @debt.amount, date_borrowed:
         @debt.date_borrowed, date_due: @debt.date_due, description: @debt.description,
-        debtor_id: @debt.debtor_id } }
+        debtor_name: @debt.debtor_name } }
     end
 
     assert_redirected_to debt_url(Debt.last)
@@ -38,7 +38,7 @@ class DebtsControllerTest < ActionDispatch::IntegrationTest
   test "should update debt" do
     patch debt_url(@debt), params: { debt: { amount: @debt.amount, date_borrowed:
       @debt.date_borrowed, date_due: @debt.date_due, description: @debt.description,
-      debtor_id: @debt.debtor_id } }
+      debtor_name: @debt.debtor_name } }
     assert_redirected_to debt_url(@debt)
   end
 

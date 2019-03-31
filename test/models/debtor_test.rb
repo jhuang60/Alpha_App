@@ -5,7 +5,5 @@ class DebtorTest < ActiveSupport::TestCase
     debtor = Debtor.new
     assert debtor.invalid?
     assert debtor.errors[:name].any?
-    assert debtor.errors[:email].any?
-    assert debtor.errors[:phone_num].any?
   end
 end

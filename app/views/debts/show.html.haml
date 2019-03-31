@@ -1,7 +1,7 @@
 %p#notice= notice
 
 %article
-  %h3= @debt.debtor.name
+  %h3= @debt.debtor_name
   %p.byline= "Amount: " + number_to_currency(@debt.amount)
   %ul
     %li{ :class => "dateb"}= "Date Borrowed: "
@@ -11,8 +11,6 @@
     %li{ :class => "dated"}= @debt.date_due
 
   %p.byline= "Description: " + @debt.description
-  %p.byline= "Email: " +@debt.debtor.email
-  %p.byline= "Phone number: " +@debt.debtor.phone_num
 
   %ul.controls
     %li{ :class => "select"}= link_to 'Edit', edit_debt_path(@debt)
