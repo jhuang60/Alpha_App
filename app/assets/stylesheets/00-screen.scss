@@ -188,6 +188,7 @@ header{
   text-align: center;
 }
 
+
 h1 {
   font-size: px-to-em(40.5px);
   line-height: px-to-em(40px,40.5px);
@@ -196,6 +197,10 @@ h1 {
 h3 {
   font-size: px-to-em(25px);
   line-height: px-to-em(50px,25px);
+}
+
+p {
+  line-height: px-to-em(25px);
 }
 
 ol {
@@ -293,18 +298,21 @@ footer {
 
 @media screen and (min-width: 600px) {
   html {
-    padding: 7%;
+    padding-right: 18%;
+    padding-left: 18%;
   }
 }
 
 @media screen and (min-width: 990px) {
   html {
-    padding: 4%;
+    padding-right: 20%;
+    padding-left: 20%;
   }
 }
 
 @media screen and (min-width: 1400px) {
   html {
-    padding: 2%;
+    padding-right: 25%;
+    padding-left: 25%;
   }
 }

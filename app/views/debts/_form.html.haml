@@ -4,7 +4,7 @@
       %h2= "#{pluralize(@debt.errors.count, "error")} prohibited this debt from being saved:"
       %ul
         - @debt.errors.full_messages.each do |message|
-          %li= message
+          %li= message 
 
   %ol.inputs
     %ol{ :class => "form"}
